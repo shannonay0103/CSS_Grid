@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Lesson 3 - Collage</title>
+
+	<style type="text/css">
+		* {
+			box-sizing: border-box;
+		}
+		html, body{
+			margin: 0;
+			padding: 0;
+			
+		}
+
+		body {
+			background: white;
+		}
+
+		.container {
+			background: black;
+			min-height: 100vh;
+			display:grid;  
+			grid-template-columns: 7fr 6fr;
+			grid-template-rows:12fr 12fr 12fr 18fr 18fr 18fr;
+			grid-template-areas: 
+					"p1 p2"
+					"p1 p3"
+					"p1 p4" 
+					"p5 p5"
+					"p6 p6" 
+					"p7 p7";
+			grid-gap: 5px;
+			width: 1170px;
+			height: 680;
+			padding: 8px;
+		}
+
+		.item {
+			background: blue;
+			min-height: 50px;
+			min-width: 100px;
+		}
+
+		#photo1 {
+			grid-area: p1;
+			background: url(allmight);
+			background-size: cover;
+			background-position: center; 
+		}
+		#photo2 {
+			grid-area: p2;
+			background: url(all-might-3.png);
+			background-size: cover;
+			background-position: center; 
+		}
+		#photo3 {
+			grid-area: p3;
+			background: url(allmight4.png);
+			background-size: cover;
+			background-position: center; 
+		}
+		#photo4 {
+			grid-area: p4;
+			background: url(all-might.jpg);
+			background-size: cover;
+			background-position: center; 
+		}
+		#photo5 {
+			grid-area: p5;
+			background: url(allmight5.jpeg);
+			background-size: cover;
+			background-position: center; 
+		}
+		#photo6 {
+			grid-area: p6;
+			background: url(allmight2.jpg);
+			background-size: cover;
+			background-position: center; 
+		}
+		#photo7 {
+			grid-area: p7;
+			background: url(ilovehim.jpg);
+			background-size: cover;
+			background-position: center; 
+		}
+	</style>
+</head>
+<body>
+
+	<div class="container"> 
+		<div class="item" id="photo1">	
+		</div>
+		<div class="item" id="photo2">	
+		</div>
+		<div class="item" id="photo3">	
+		</div>
+		<div class="item" id="photo4">	
+		</div>
+		<div class="item" id="photo5">	
+		</div>
+		<div class="item" id="photo6">	
+		</div>
+		<div class="item" id="photo7">	
+		</div>
+	</div>
+
+
+</body>
+</html>
